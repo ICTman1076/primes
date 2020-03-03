@@ -14,5 +14,5 @@ print("Making a string...")
 finalContent="\n".join(newData)
 print("...and now writing it in.")
 with open("./primessource/primes.txt","w") as f:
-    f.write()
+    f.write(finalContent)
 print("Done in "+str(int((time.time()-timethen)*10)/10)+"s")
