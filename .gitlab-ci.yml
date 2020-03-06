@@ -1,4 +1,4 @@
 pushToGitHub:
   script:
-    - git remote add github https://primesbot:81cd1a8aeab2d923041e450858c0869896121ca0@github.com/ICTman1076/primes.git
+    - git remote add github "https://primesbot:$GitHubPushToken@github.com/ICTman1076/primes.git"
     - git push -u github master
