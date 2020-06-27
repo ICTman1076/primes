@@ -1,5 +1,5 @@
 print("PyPy's done with compiling, now I'll read in the file...")
-#import math
+import math
 import json
 from time import time
 cnt = 0
@@ -15,13 +15,13 @@ while True:
     try:
         cnt += 1
         prime = True
-        #maxNum = math.sqrt(cnt)
+        maxNum = math.sqrt(cnt)
         for thing in content:
             if cnt%thing == 0:
                 prime = False
                 break
-            #if thing>maxNum:
-            #    break
+            if thing>maxNum:
+                break
         if prime:
             content.append(cnt)
         elif cnt%10000 == 0:
